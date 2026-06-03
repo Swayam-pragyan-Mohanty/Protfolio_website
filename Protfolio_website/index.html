@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swayam Pragyan Mohanty | AI/ML Developer & Full-Stack Enthusiast</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Swayam Pragyan Mohanty, a Computer Science undergraduate specializing in Artificial Intelligence, Machine Learning, RAG pipeline chatbots, and modern full-stack development.">
+    <meta name="keywords" content="Swayam Pragyan Mohanty, AI Developer, ML Engineer, RAG Chatbot, Full-Stack Developer, Smart India Hackathon Winner, Computer Science, Portfolio">
+    <meta name="author" content="Swayam Pragyan Mohanty">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for AI Neural Network Nodes -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo-text">
+                <span class="gradient-text">&lt;Swayam /&gt;</span>
+            </a>
+            
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#achievements" class="nav-link">Milestones</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link contact-btn-mobile">Let's Connect</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline btn-sm hide-mobile">Let's Connect</a>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-profile-header">
+                    <div class="profile-avatar-wrapper">
+                        <img src="profile.jpg" alt="Swayam Pragyan Mohanty" class="profile-avatar">
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="badge-container">
+                        <span class="glow-badge"><span class="pulse-dot"></span>Available for Opportunities</span>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <br>
+                    <span class="gradient-name">Swayam Pragyan Mohanty</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typed-text"></span><span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    I am a Computer Science undergraduate specializing in **Artificial Intelligence & Machine Learning**. Passioned about engineering robust neural pipelines, advanced RAG-based conversational systems, and beautiful full-stack solutions to solve real-world problems.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">
+                        View Work
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+                
+                <!-- Social Connections -->
+                <div class="social-links-container">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:swayampragyan@gmail.com" class="social-icon-link" aria-label="Email">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sleek AI Terminal mock / Avatar container -->
+            <div class="hero-visual">
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">swayam_agent.py</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="code-line"><span class="c-keyword">import</span> agent_brain <span class="c-keyword">as</span> ab</p>
+                        <p class="code-line"><span class="c-keyword">from</span> skills <span class="c-keyword">import</span> NLP, RAG, NeuralPipes</p>
+                        <p class="code-line">&nbsp;</p>
+                        <p class="code-line">swayam = ab.Developer(</p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;role=<span class="c-string">"AI/ML Engineer"</span>,</p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;focus=[<span class="c-string">"Generative AI"</span>, <span class="c-string">"RAG Architectures"</span>],</p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;passion=<span class="c-string">"Solving complex technical problems"</span></p>
+                        <p class="code-line">)</p>
+                        <p class="code-line">&nbsp;</p>
+                        <p class="code-line">swayam.initialize_pipeline()</p>
+                        <p class="code-line"><span class="c-comment"># Pipeline active: standard latency &lt; 50ms</span></p>
+                        <p class="code-line"><span class="c-success">&gt;&gt;&gt; Ready to build the future...</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Milestones Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Key Milestones</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="achievements-grid">
+                <!-- Card 1: SIH -->
+                <div class="achievement-card glass-card">
+                    <div class="achievement-img-wrapper slideshow-wrapper" id="sih-slideshow">
+                        <div class="slides-container">
+                            <div class="slide active">
+                                <img src="sih_victory.jpg" alt="Smart India Hackathon 2025 Victory Ceremony" class="achievement-img">
+                                <div class="slide-caption">National Winner Stage presentation under confetti</div>
+                            </div>
+                            <div class="slide">
+                                <img src="sih_work.jpg" alt="Smart India Hackathon Brainstorming & Coding" class="achievement-img">
+                                <div class="slide-caption">Intense 36-hour coding round with mentors</div>
+                            </div>
+                            <div class="slide">
+                                <img src="sih_trophy.jpg" alt="Smart India Hackathon Trophy & Cheque" class="achievement-img">
+                                <div class="slide-caption">Champion Trophy, Plaque, and ₹1,50,000/- Check</div>
+                            </div>
+                        </div>
+                        <button class="slide-arrow prev-arrow" aria-label="Previous Slide">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="slide-arrow next-arrow" aria-label="Next Slide">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                        <div class="slideshow-dots">
+                            <span class="slide-dot active" data-index="0"></span>
+                            <span class="slide-dot" data-index="1"></span>
+                            <span class="slide-dot" data-index="2"></span>
+                        </div>
+                        <div class="achievement-badge">Winner</div>
+                    </div>
+                    <div class="achievement-info">
+                        <div class="achievement-meta">
+                            <span class="achievement-year">2025</span>
+                            <span class="achievement-category">National Hackathon</span>
+                        </div>
+                        <h3 class="achievement-card-title">Smart India Hackathon (SIH) National Winner</h3>
+                        <p class="achievement-desc">
+                            Secured **First Place** in the prestigious national-level hackathon organized by the Government of India. Led full-stack product engineering with the team **"Samadhan Bandhu"**, developing a scalable, high-impact civic resolution platform within an intense 36-hour sprint.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Odisha Skill Competition -->
+                <div class="achievement-card glass-card">
+                    <div class="achievement-img-wrapper slideshow-wrapper" id="skills-slideshow">
+                        <div class="slides-container">
+                            <div class="slide active">
+                                <img src="odisha_skill_medal.jpg" alt="Odisha Skill Competition Medal" class="achievement-img">
+                                <div class="slide-caption">Bronze Medalist with Certificate</div>
+                            </div>
+                            <div class="slide">
+                                <img src="odisha_skill_work.jpg" alt="Odisha Skill Competition Mechatronics Technical Rig" class="achievement-img">
+                                <div class="slide-caption">Programming & wiring the Festo MPS station</div>
+                            </div>
+                            <div class="slide">
+                                <img src="odisha_skill_stage.jpg" alt="Odisha Skill Stage Victory" class="achievement-img">
+                                <div class="slide-caption">Honored by Govt. officials at award stage</div>
+                            </div>
+                        </div>
+                        <button class="slide-arrow prev-arrow" aria-label="Previous Slide">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        <button class="slide-arrow next-arrow" aria-label="Next Slide">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                        <div class="slideshow-dots">
+                            <span class="slide-dot active" data-index="0"></span>
+                            <span class="slide-dot" data-index="1"></span>
+                            <span class="slide-dot" data-index="2"></span>
+                        </div>
+                        <div class="achievement-badge badge-bronze">Bronze Medal</div>
+                    </div>
+                    <div class="achievement-info">
+                        <div class="achievement-meta">
+                            <span class="achievement-year">2024</span>
+                            <span class="achievement-category">Skill India Championship</span>
+                        </div>
+                        <h3 class="achievement-card-title">Odisha Skill Competition Bronze Medalist</h3>
+                        <p class="achievement-desc">
+                            Secured the **Bronze Medal** in the highly competitive and rigorous **Mechatronics** category. Evaluated on system integration, complex PLC programming, mechanical automation, electrical wiring, and fluid dynamics under strict national standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Technical Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <h3 class="project-title">RAG-Based Chatbot System</h3>
+                    <p class="project-description">
+                        An intelligent conversational assistant leveraging **Retrieval-Augmented Generation (RAG)** to query complex PDF reports, documentation, and databases. Uses advanced semantic vector search pipelines to provide highly relevant context injection with zero hallucination.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>VectorDB</span>
+                        <span>LLM</span>
+                    </div>
+                    <div class="project-link-wrapper">
+                        <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                            GitHub Code
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-glow-alt"></div>
+                    <div class="project-icon-box icon-alt">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
+                    </div>
+                    <h3 class="project-title">Heart Disease Prediction System</h3>
+                    <p class="project-description">
+                        A clinical decision-support diagnostic platform that analyzes patient physiological metrics (blood pressure, cholesterol, ECG profiles) to predict cardiovascular disease risk. Built using **K-Nearest Neighbors (KNN)** with high accuracy.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>KNN Algorithm</span>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="project-link-wrapper">
+                        <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                            GitHub Code
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-glow"></div>
+                    <div class="project-icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3 class="project-title">Civic Reporting Platform</h3>
+                    <p class="project-description">
+                        A real-time, crowd-sourced digital dashboard enabling urban residents to report local municipal, environment, and infrastructure issues (like potholes, grid issues). Features geotagging, responsive dashboards, and prioritized ticketing.
+                    </p>
+                    <div class="project-tech-tags">
+                        <span>HTML5/CSS3</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="project-link-wrapper">
+                        <a href="https://github.com" class="project-link" target="_blank" rel="noopener noreferrer">
+                            GitHub Code
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Competencies</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="skills-wrapper">
+                <!-- Skill Category 1 -->
+                <div class="skill-category-card glass-card">
+                    <h3 class="category-title">
+                        <span class="cat-icon text-teal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </span>
+                        Languages
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">Python</div>
+                        <div class="skill-pill">Java</div>
+                        <div class="skill-pill">C</div>
+                        <div class="skill-pill">SQL</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skill-category-card glass-card">
+                    <h3 class="category-title">
+                        <span class="cat-icon text-violet">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </span>
+                        AI/ML & Data Science
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">Generative AI</div>
+                        <div class="skill-pill">Prompt Engineering</div>
+                        <div class="skill-pill">NumPy</div>
+                        <div class="skill-pill">Pandas</div>
+                        <div class="skill-pill">Scikit-learn</div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skill-category-card glass-card">
+                    <h3 class="category-title">
+                        <span class="cat-icon text-teal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </span>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill">Git & GitHub</div>
+                        <div class="skill-pill">HTML5 & CSS3</div>
+                        <div class="skill-pill">JavaScript (ES6)</div>
+                        <div class="skill-pill">Node.js / Express</div>
+                        <div class="skill-pill">REST APIs</div>
+                        <div class="skill-pill">TailwindCSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section / Footer -->
+    <footer id="contact" class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="section-tag">Contact</span>
+                <h2 class="footer-heading">Let's Connect</h2>
+                <p class="footer-text">
+                    I am always excited to discuss RAG optimization, AI modeling pipelines, backend integration, or full-stack software development projects. Drop me a line or connect through my socials!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:swayampragyan@gmail.com" class="contact-method-item">
+                        <span class="contact-icon text-teal">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </span>
+                        swayampragyan@gmail.com
+                    </a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Glassmorphic Form -->
+            <div class="footer-right">
+                <form id="contact-form" class="contact-form glass-card" novalidate>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                        <span class="error-msg" id="name-error">Please enter your name.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="yourname@domain.com" required>
+                        <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe how we can work together..." required></textarea>
+                        <span class="error-msg" id="message-error">Please enter a message.</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                        Send Message
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                    
+                    <div class="form-success-box" id="success-box">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Message sent successfully!
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container bottom-container">
+                <p class="copyright">&copy; 2026 Swayam Pragyan Mohanty. All rights reserved.</p>
+                <a href="#" class="back-to-top">
+                    Back to top
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
